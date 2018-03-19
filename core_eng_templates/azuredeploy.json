@@ -884,6 +884,63 @@
             "adminPassword" : {"value" : "[parameters('adminPassword')]"}
           }
         }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "DevTemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploydev.json"
+          },
+          "parameters" : {
+            "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
+            "subnet-name" : {"value" : "[variables('snnDEV-Tier2')]"},
+            "adminUserName" : {"value" : "[parameters('adminUserName')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "CertTemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycert.json"
+          },
+          "parameters" : {
+            "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
+            "subnet-name" : {"value" : "[variables('snnCERT-CDE-Tier2')]"},
+            "adminUserName" : {"value" : "[parameters('adminUserName')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "CertNonCDETemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycertnoncde.json"
+          },
+          "parameters" : {
+            "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
+            "subnet-name" : {"value" : "[variables('snnCERT-NONCDE-Tier2')]"},
+            "adminUserName" : {"value" : "[parameters('adminUserName')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
       }
     ],
     "outputs" : {
