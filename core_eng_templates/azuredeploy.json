@@ -941,6 +941,63 @@
             "adminPassword" : {"value" : "[parameters('adminPassword')]"}
           }
         }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "CoreCDETemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycorecde.json"
+          },
+          "parameters" : {
+            "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
+            "subnet-name" : {"value" : "[variables('snnCORE-CDE-Tier2')]"},
+            "adminUserName" : {"value" : "[parameters('adminUserName')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "CoreNonCDETemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycorenoncde.json"
+          },
+          "parameters" : {
+            "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
+            "subnet-name" : {"value" : "[variables('snnCORE-NONCDE-Tier2')]"},
+            "adminUserName" : {"value" : "[parameters('adminUserName')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "ProdCDETemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeployprodcde.json"
+          },
+          "parameters" : {
+            "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
+            "subnet-name" : {"value" : "[variables('snnPROD-CDE-Tier2')]"},
+            "adminUserName" : {"value" : "[parameters('adminUserName')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
       }
     ],
     "outputs" : {
