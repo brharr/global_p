@@ -13,6 +13,24 @@
         },
         "adminPassword" : {
             "type": "string"
+        },
+        "nsg-wsus-name" : {
+          "type" : "string"
+        },
+        "nsg-avm-name" : {
+          "type": "string"
+        },
+        "nsg-ad-name" : {
+          "type": "string"
+        },
+        "nsg-lic-name" : {
+          "type": "string"
+        },
+        "nsg-iem-name" : {
+          "type": "string"
+        },
+        "nsg-itbx-name" : {
+          "type": "string"
         }
     },
     "variables": {
@@ -80,6 +98,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-ad-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -166,6 +185,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-lic-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -243,6 +263,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-itbx-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -320,6 +341,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-iem-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -397,6 +419,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-avm-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -474,6 +497,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-wsus-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",

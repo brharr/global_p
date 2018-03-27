@@ -900,7 +900,13 @@
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnCORE-CDE-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-wsus-name" : {"value" : "[variables('nPROD-CDE-WSUS-ANY-ADMIN')]"},
+            "nsg-avm-name" : {"value" : "[variables('nPROD-CDE-AVM-ANY-ADMIN')]"},
+            "nsg-lic-name" : {"value" : "[variables('nPROD-CDE-LIC-ANY-ADMIN')]"},
+            "nsg-iem-name" : {"value" : "[variables('nPROD-CDE-IEM-ANY-ADMIN')]"},
+            "nsg-ad-name" : {"value" : "[variables('nPROD-CDE-AD-ANY-ADMIN')]"},
+            "nsg-itbx-name": {"value" : "[variables('nPROD-CDE-ITBX-ANY-ADMIN')]"}
           }
         }
       },
@@ -920,7 +926,18 @@
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnCORE-NONCDE-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-wsus-name" : {"value" : "[variables('nPROD-NCDE-WSUS-ANY-ADMIN')]"},
+            "nsg-avm-name" : {"value" : "[variables('nPROD-NCDE-AVM-ANY-ADMIN')]"},
+            "nsg-lic-name" : {"value" : "[variables('nPROD-NCDE-LIC-ANY-ADMIN')]"},
+            "nsg-iem-name" : {"value" : "[variables('nPROD-NCDE-IEM-ANY-ADMIN')]"},
+            "nsg-ad-name" : {"value" : "[variables('nPROD-NCDE-AD-ANY-ADMIN')]"},
+            "nsg-dns-name" : {"value" : "[variables('nPROD-NCDE-DNS-ANY-ADMIN')]"},
+            "nsg-repo-name" : {"value" : "[variables('nPROD-NCDE-REPO-ANY-ADMIN')]"},
+            "nsg-scan-name" : {"value" : "[variables('nPROD-NCDE-SCAN-ANY-ADMIN')]"},
+            "nsg-itbx-name": {"value" : "[variables('nPROD-NCDE-ITBX-WSS-ANY-ADMIN')]"},
+            "nsg-pup-name": {"value" : "[variables('nPROD-NCDE-GIT-PUP-WSS-ANY-ADMIN')]"},
+            "nsg-git-name": {"value" : "[variables('nPROD-NCDE-GIT-SAT-ANY-ADMIN')]"}
           }
         }
       },
@@ -940,7 +957,11 @@
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnPROD-CDE-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-jump-lx-name": {"value" : "[variables('nPROD-CDE-LJUMP-ANY-ADMIN')]"},
+            "nsg-smtp-name": {"value" : "[variables('nPROD-CDE-SMTP-ANY-ADMIN')]"},
+            "nsg-jump-win-name": {"value" : "[variables('nPROD-CDE-WJUMP-ANY-ADMIN')]"},
+            "nsg-scan-name" : {"value" : "[variables('nPROD-NCDE-SCAN-ANY-ADMIN')]"}
           }
         }
       }

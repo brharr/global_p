@@ -13,6 +13,18 @@
         },
         "adminPassword" : {
             "type": "string"
+        },
+        "nsg-scan-name" : {
+          "type": "string"
+        },
+        "nsg-jump-win-name" : {
+          "type": "string"
+        },
+        "nsg-jump-lx-name" : {
+          "type" : "string"
+        },
+        "nsg-smtp-name" : {
+          "type" : "string"
         }
     },
     "variables": {
@@ -118,6 +130,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-scan-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -199,6 +212,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-smtp-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -288,6 +302,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-jump-win-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
@@ -377,6 +392,7 @@
               "department" : "infrastructure"
             },
             "properties": {
+              "networkSecurityGroup" : { "id" : "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('nsg-jump-lx-name'))]" },
               "ipConfigurations": [
                 {
                   "name": "ipconfig1",
