@@ -831,7 +831,10 @@
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnDEV-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-stmp-name" : {"value" : "[variables('nDEV-SMTP-ANY-ADMIN')]"},
+            "nsg-jump-lx-name" : {"value" : "[variables('nDEV-LJUMP-ANY-ADMIN')]"},
+            "nsg-jump-win-name" : {"value" : "[variables('nDEV-WJUMP-ANY-ADMIN')]"}
           }
         }
       },
@@ -851,7 +854,10 @@
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnCERT-CDE-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-stmp-name" : {"value" : "[variables('nCERT-CDE-SMTP-ANY-ADMIN')]"},
+            "nsg-jump-lx-name" : {"value" : "[variables('nCERT-CDE-LJUMP-ANY-ADMIN')]"},
+            "nsg-jump-win-name" : {"value" : "[variables('nCERT-CDE-WJUMP-ANY-ADMIN')]"}
           }
         }
       },
@@ -871,7 +877,10 @@
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnCERT-NONCDE-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-stmp-name" : {"value" : "[variables('nCERT-NCDE-SMTP-ANY-ADMIN')]"},
+            "nsg-jump-lx-name" : {"value" : "[variables('nCERT-NCDE-LJUMP-ANY-ADMIN')]"},
+            "nsg-jump-win-name" : {"value" : "[variables('nCERT-NCDE-WJUMP-ANY-ADMIN')]"}
           }
         }
       },
