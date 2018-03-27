@@ -964,6 +964,44 @@
             "nsg-scan-name" : {"value" : "[variables('nPROD-NCDE-SCAN-ANY-ADMIN')]"}
           }
         }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "ProdCDETemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]", 
+                       "Microsoft.Resources/deployments/NSGTemplate"],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "[concat(variables('templateURL'), 'azuredeployprodedge.json')]"
+          },
+          "parameters" : {
+            "virtualNetworkName" : {"value" : "[parameters('virtualNetworkName')]"},
+            "Subnet1Name" : {"value" : "[variables('snnCORE-Prod-Edge')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "ProdCDETemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]", 
+                       "Microsoft.Resources/deployments/NSGTemplate"],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "[concat(variables('templateURL'), 'azuredeploynonprodedge.json')]"
+          },
+          "parameters" : {
+            "virtualNetworkName" : {"value" : "[parameters('virtualNetworkName')]"},
+            "Subnet1Name" : {"value" : "[variables('snnCORE-NonProd-Edge')]"},
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+          }
+        }
       }
     ]
   }
