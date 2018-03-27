@@ -2,16 +2,16 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "nCERT-CDE-LJUMP-ANY-ADMIN":{ "type": "string" },
-        "nCERT-CDE-SMTP-ANY-ADMIN":{ "type": "string" },
-        "nCERT-CDE-WJUMP-ANY-ADMIN":{ "type": "string" },
-        "nCERT-NCDE-LJUMP-ANY-ADMIN":{ "type": "string" },
-        "nCERT-NCDE-SMTP-ANY-ADMIN":{ "type": "string" },
-        "nCERT-NCDE-WJUMP-ANY-ADMIN":{ "type": "string" },
+        "nCERT-CDE-LJUMP-ANY-ADMIN": { "type": "string" },
+        "nCERT-CDE-SMTP-ANY-ADMIN": { "type": "string" },
+        "nCERT-CDE-WJUMP-ANY-ADMIN": { "type": "string" },
+        "nCERT-NCDE-LJUMP-ANY-ADMIN": { "type": "string" },
+        "nCERT-NCDE-SMTP-ANY-ADMIN": { "type": "string" },
+        "nCERT-NCDE-WJUMP-ANY-ADMIN": { "type": "string" },
         "nPROD-CDE-WSUS-ANY-ADMIN": { "type": "string" },
         "nPROD-CDE-AVM-ANY-ADMIN": { "type": "string" },
         "nPROD-CDE-IEM-ANY-ADMIN": { "type": "string" },
-        "nPROD-CDE-ITBX-ANY-ADMIN":{ "type": "string" },
+        "nPROD-CDE-ITBX-ANY-ADMIN": { "type": "string" },
         "nPROD-CDE-LIC-ANY-ADMIN": { "type": "string" },
         "nPROD-CDE-AD-ANY-ADMIN": { "type": "string" },
         "nPROD-CDE-LJUMP-ANY-ADMIN": { "type": "string" },
@@ -14395,10 +14395,5 @@
             },
             "dependsOn": []
         }
-    ],
-    "outputs" : {
-        "nsg-names" : {
-
-        }
-    }
+    ]
 }

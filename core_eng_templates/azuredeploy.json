@@ -797,7 +797,7 @@
         "name" : "QATemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
-                       "Microsoft.Resource/deployments/NSGTemplate" ],
+                       "Microsoft.Resources/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
@@ -820,7 +820,7 @@
         "name" : "DevTemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
-                       "Microsoft.Resource/deployments/NSGTemplate" ],
+                       "Microsoft.Resources/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
@@ -840,7 +840,7 @@
         "name" : "CertTemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]", 
-                       "Microsoft.Resource/deployments/NSGTemplate" ],
+                       "Microsoft.Resources/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
@@ -860,7 +860,7 @@
         "name" : "CertNonCDETemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
-                       "Microsoft.Resource/deployments/NSGTemplate" ],
+                       "Microsoft.Resources/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
@@ -880,7 +880,7 @@
         "name" : "CoreCDETemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
-                       "Microsoft.Resource/deployments/NSGTemplate" ],
+                       "Microsoft.Resources/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
@@ -900,7 +900,7 @@
         "name" : "CoreNonCDETemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
-                       "Microsoft.Resource/deployments/NSGTemplate" ],
+                       "Microsoft.Resources/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
@@ -920,7 +920,7 @@
         "name" : "ProdCDETemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]", 
-                       "Microsoft.Resource/deployments/NSGTemplate"],
+                       "Microsoft.Resources/deployments/NSGTemplate"],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
