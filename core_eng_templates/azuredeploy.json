@@ -38,248 +38,89 @@
           "description": "IP Address for VNet DNS Resolution"
         }
       },
-      "snaCORE-Reserved" :{
-        "type":"string"
-      },
-      "snaCORE-Prod-Edge" :{
-        "type":"string"
-      },
-      "snaCORE-NonProd-Edge" :{
-        "type":"string"
-      },
-      "snaCORE-CDE-Edge-Expansion" :{
-        "type":"string"
-      },
-      "snaCORE-CDE-Tier1-LB" :{
-        "type":"string"
-      },
-      "snaCORE-CDE-Tier2-LB" :{
-        "type":"string"
-      },
-      "snaCore-Expansion1":{
-        "type": "string"
-      },
-      "snaCore-CDE-Tier1":{
-        "type": "string"
-      },
-      "snaCore-CDE-Tier2":{
-        "type": "string"
-      },
-      "snaCore-CDE-Tier3":{
-        "type": "string"
-      },
-      "snaCore-NonCDE-Tier1-LB":{
-        "type": "string"
-      },
-      "snaCore-NonCDE-Tier2-LB":{
-        "type": "string"
-      },
-      "snaCore-Expansion2":{
-        "type": "string"
-      },
-      "snaCore-NonCDE-Tier1":{
-        "type": "string"
-      },
-      "snaCore-NonCDE-Tier2":{
-        "type": "string"
-      },
-      "snaCore-NonCDE-Tier3":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier1-LB":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier2-LB":{
-        "type": "string"
-      },
-      "snaProd-CDE-Expansion1":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier1":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier2":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier3":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier1-Container":{
-        "type": "string"
-      },
-      "snaProd-CDE-Tier2-Container":{
-        "type": "string"
-      },
-      "snaProd-CDE-Expansion2":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier1-LB":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier2-LB":{
-        "type": "string"
-      },
-      "snaCert-CDE-Expansion1":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier1":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier2":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier3":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier1-Container":{
-        "type": "string"
-      },
-      "snaCert-CDE-Tier2-Container":{
-        "type": "string"
-      },
-      "snaCert-CDE-Expansion2":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier1-LB":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier2-LB":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Expansion1":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier1":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier2":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier3":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier1-Container":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Tier2-Container":{
-        "type": "string"
-      },
-      "snaProd-NonCDE-Expansion2":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier1-LB":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier2-LB":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Expansion1":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier1":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier2":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier3":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier1-Container":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Tier2-Container":{
-        "type": "string"
-      },
-      "snaCert-NonCDE-Expansion2":{
-        "type": "string"
-      },
-      "snaQA-Tier1-LB":{
-        "type": "string"
-      },
-      "snaQA-Tier2-LB":{
-        "type": "string"
-      },
-      "snaQA-Expansion1":{
-        "type": "string"
-      },
-      "snaQA-Tier1":{
-        "type": "string"
-      },
-      "snaQA-Tier2":{
-        "type": "string"
-      },
-      "snaQA-Tier3":{
-        "type": "string"
-      },
-      "snaQA-Tier1-Container":{
-        "type": "string"
-      },
-      "snaQA-Tier2-Container":{
-        "type": "string"
-      },
-      "snaQA-Expansion2":{
-        "type": "string"
-      },
-      "snaDEV-Tier1-LB":{
-        "type": "string"
-      },
-      "snaDEV-Tier2-LB":{
-        "type": "string"
-      },
-      "snaDEV-Expansion1":{
-        "type": "string"
-      },
-      "snaDEV-Tier1":{
-        "type": "string"
-      },
-      "snaDEV-Tier2":{
-        "type": "string"
-      },
-      "snaDEV-Tier3":{
-        "type": "string"
-      },
-      "snaDEV-Tier1-Container":{
-        "type": "string"
-      },
-      "snaDEV-Tier2-Container":{
-        "type": "string"
-      },
-      "snaDEV-Expansion2":{
-        "type": "string"
-      },
-      "snaSandbox-Tier1":{
-        "type": "string"
-      },
-      "snaSandbox-Tier2":{
-        "type": "string"
-      },
-      "snaSandbox-Tier3":{
-        "type": "string"
-      },
-      "snaSandbox-Container":{
-        "type": "string"
-      },
-      "snaSandbox-Expansion1":{
-        "type": "string"
-      },
-      "snaInfrastructure-Tier1":{
-        "type": "string"
-      },
-      "snaInfrastructure-Tier2":{
-        "type": "string"
-      },
-      "snaInfrastructure-Tier3":{
-        "type": "string"
-      },
-      "snaInfrastructure-Container":{
-        "type": "string"
-      },
-      "snaInfrastructure-Expansion1":{
-        "type": "string"
-      }
+      "snaCORE-Reserved" :{ "type":"string" },
+      "snaCORE-Prod-Edge" :{ "type":"string" },
+      "snaCORE-NonProd-Edge" :{ "type":"string" },
+      "snaCORE-CDE-Edge-Expansion" :{ "type":"string" },
+      "snaCORE-CDE-Tier1-LB" :{ "type":"string" },
+      "snaCORE-CDE-Tier2-LB" :{ "type":"string" },
+      "snaCore-Expansion1":{ "type": "string" },
+      "snaCore-CDE-Tier1":{ "type": "string" },
+      "snaCore-CDE-Tier2":{ "type": "string" },
+      "snaCore-CDE-Tier3":{ "type": "string" },
+      "snaCore-NonCDE-Tier1-LB":{ "type": "string" },
+      "snaCore-NonCDE-Tier2-LB":{ "type": "string" },
+      "snaCore-Expansion2":{ "type": "string" },
+      "snaCore-NonCDE-Tier1":{ "type": "string" },
+      "snaCore-NonCDE-Tier2":{ "type": "string" },
+      "snaCore-NonCDE-Tier3":{ "type": "string" },
+      "snaProd-CDE-Tier1-LB":{ "type": "string" },
+      "snaProd-CDE-Tier2-LB":{ "type": "string" },
+      "snaProd-CDE-Expansion1":{ "type": "string" },
+      "snaProd-CDE-Tier1":{ "type": "string" },
+      "snaProd-CDE-Tier2":{ "type": "string" },
+      "snaProd-CDE-Tier3":{ "type": "string" },
+      "snaProd-CDE-Tier1-Container":{ "type": "string" },
+      "snaProd-CDE-Tier2-Container":{ "type": "string" },
+      "snaProd-CDE-Expansion2":{ "type": "string" },
+      "snaCert-CDE-Tier1-LB":{ "type": "string" },
+      "snaCert-CDE-Tier2-LB":{ "type": "string" },
+      "snaCert-CDE-Expansion1":{ "type": "string" },
+      "snaCert-CDE-Tier1":{ "type": "string" },
+      "snaCert-CDE-Tier2":{ "type": "string" },
+      "snaCert-CDE-Tier3":{ "type": "string" },
+      "snaCert-CDE-Tier1-Container":{ "type": "string" },
+      "snaCert-CDE-Tier2-Container":{ "type": "string" },
+      "snaCert-CDE-Expansion2":{ "type": "string" },
+      "snaProd-NonCDE-Tier1-LB":{ "type": "string" },
+      "snaProd-NonCDE-Tier2-LB":{ "type": "string" },
+      "snaProd-NonCDE-Expansion1":{ "type": "string" },
+      "snaProd-NonCDE-Tier1":{ "type": "string" },
+      "snaProd-NonCDE-Tier2":{ "type": "string" },
+      "snaProd-NonCDE-Tier3":{ "type": "string" },
+      "snaProd-NonCDE-Tier1-Container":{ "type": "string" },
+      "snaProd-NonCDE-Tier2-Container":{ "type": "string" },
+      "snaProd-NonCDE-Expansion2":{ "type": "string" },
+      "snaCert-NonCDE-Tier1-LB":{ "type": "string" },
+      "snaCert-NonCDE-Tier2-LB":{ "type": "string" },
+      "snaCert-NonCDE-Expansion1":{ "type": "string" },
+      "snaCert-NonCDE-Tier1":{ "type": "string" },
+      "snaCert-NonCDE-Tier2":{ "type": "string" },
+      "snaCert-NonCDE-Tier3":{ "type": "string" },
+      "snaCert-NonCDE-Tier1-Container":{ "type": "string" },
+      "snaCert-NonCDE-Tier2-Container":{ "type": "string" },
+      "snaCert-NonCDE-Expansion2":{ "type": "string" },
+      "snaQA-Tier1-LB":{ "type": "string" },
+      "snaQA-Tier2-LB":{ "type": "string" },
+      "snaQA-Expansion1":{ "type": "string" },
+      "snaQA-Tier1":{ "type": "string" },
+      "snaQA-Tier2":{ "type": "string" },
+      "snaQA-Tier3":{ "type": "string" },
+      "snaQA-Tier1-Container":{ "type": "string" },
+      "snaQA-Tier2-Container":{ "type": "string" },
+      "snaQA-Expansion2":{ "type": "string" },
+      "snaDEV-Tier1-LB":{ "type": "string" },
+      "snaDEV-Tier2-LB":{ "type": "string" },
+      "snaDEV-Expansion1":{ "type": "string" },
+      "snaDEV-Tier1":{ "type": "string" },
+      "snaDEV-Tier2":{ "type": "string" },
+      "snaDEV-Tier3":{ "type": "string" },
+      "snaDEV-Tier1-Container":{ "type": "string" },
+      "snaDEV-Tier2-Container":{ "type": "string" },
+      "snaDEV-Expansion2":{ "type": "string" },
+      "snaSandbox-Tier1":{ "type": "string" },
+      "snaSandbox-Tier2":{ "type": "string" },
+      "snaSandbox-Tier3":{ "type": "string" },
+      "snaSandbox-Container":{ "type": "string" },
+      "snaSandbox-Expansion1":{ "type": "string" },
+      "snaInfrastructure-Tier1":{ "type": "string" },
+      "snaInfrastructure-Tier2":{ "type": "string" },
+      "snaInfrastructure-Tier3":{ "type": "string" },
+      "snaInfrastructure-Container":{ "type": "string" },
+      "snaInfrastructure-Expansion1":{ "type": "string" }
      },
     "variables": {
+      "templateURL" : "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/",
       "snnCORE-Reserved" : "CORE-Reserved",
       "snnCORE-Prod-Edge" : "CORE-Prod-Edge",
       "snnCORE-NonProd-Edge" : "CORE-NonProd-Edge",
@@ -360,6 +201,41 @@
       "snnInfrastructure-Tier3" : "Infrastructure-Tier3",
       "snnInfrastructure-Container" : "Infrastructure-Container",
       "snnInfrastructure-Expansion1" : "Infrastructure-Expansion1",
+      "nCERT-CDE-LJUMP-ANY-ADMIN":"CERT-CDE-LJUMP-ANY-ADMIN",
+      "nCERT-CDE-SMTP-ANY-ADMIN":"CERT-CDE-SMTP-ANY-ADMIN",
+      "nCERT-CDE-WJUMP-ANY-ADMIN":"CERT-CDE-WJUMP-ANY-ADMIN",
+      "nCERT-NCDE-LJUMP-ANY-ADMIN":"CERT-NCDE-LJUMP-ANY-ADMIN",
+      "nCERT-NCDE-SMTP-ANY-ADMIN":"CERT-NCDE-SMTP-ANY-ADMIN",
+      "nCERT-NCDE-WJUMP-ANY-ADMIN":"CERT-NCDE-WJUMP-ANY-ADMIN",
+      "nPROD-CDE-WSUS-ANY-ADMIN": "PROD-CDE-WSUS-ANY-ADMIN",
+      "nPROD-CDE-AVM-ANY-ADMIN": "PROD-CDE-AVM-ANY-ADMIN",
+      "nPROD-CDE-IEM-ANY-ADMIN": "PROD-CDE-IEM-ANY-ADMIN",
+      "nPROD-CDE-ITBX-ANY-ADMIN": "PROD-CDE-ITBX-ANY-ADMIN",
+      "nPROD-CDE-LIC-ANY-ADMIN": "PROD-CDE-LIC-ANY-ADMIN",
+      "nPROD-CDE-AD-ANY-ADMIN": "PROD-CDE-AD-ANY-ADMIN",
+      "nPROD-CDE-LJUMP-ANY-ADMIN": "PROD-CDE-LJUMP-ANY-ADMIN",
+      "nPROD-CDE-SMTP-ANY-ADMIN": "PROD-CDE-SMTP-ANY-ADMIN",
+      "nPROD-CDE-WJUMP-ANY-ADMIN": "PROD-CDE-WJUMP-ANY-ADMIN",
+      "nPROD-NCDE-LJUMP-ANY-ADMIN": "PROD-NCDE-LJUMP-ANY-ADMIN",
+      "nPROD-NCDE-SMTP-ANY-ADMIN": "PROD-NCDE-SMTP-ANY-ADMIN",
+      "nPROD-NCDE-WJUMP-ANY-ADMIN": "PROD-NCDE-WJUMP-ANY-ADMIN",
+      "nPROD-NCDE-SCAN-ANY-ADMIN": "PROD-NCDE-SCAN-ANY-ADMIN",
+      "nPROD-NCDE-DNS-ANY-ADMIN": "PROD-NCDE-DNS-ANY-ADMIN",
+      "nPROD-NCDE-AD-ANY-ADMIN": "PROD-NCDE-AD-ANY-ADMIN",
+      "nPROD-NCDE-WSUS-ANY-ADMIN": "PROD-NCDE-WSUS-ANY-ADMIN",
+      "nPROD-NCDE-REPO-ANY-ADMIN": "PROD-NCDE-REPO-ANY-ADMIN",
+      "nPROD-NCDE-AVM-ANY-ADMIN": "PROD-NCDE-AVM-ANY-ADMIN",
+      "nPROD-NCDE-IEM-ANY-ADMIN": "PROD-NCDE-IEM-ANY-ADMIN",
+      "nPROD-NCDE-LIC-ANY-ADMIN": "PROD-NCDE-LIC-ANY-ADMIN",
+      "nDEV-LJUMP-ANY-ADMIN":"DEV-LJUMP-ANY-ADMIN",
+      "nDEV-WJUMP-ANY-ADMIN":"DEV-WJUMP-ANY-ADMIN",
+      "nDEV-SMTP-ANY-ADMIN": "DEV-SMTP-ANY-ADMIN",
+      "nQA-LJUMP-ANY-ADMIN":"QA-LJUMP-ANY-ADMIN",
+      "nQA-WJUMP-ANY-ADMIN":"QA-WJUMP-ANY-ADMIN",
+      "nQA-SMTP-ANY-ADMIN": "QA-SMTP-ANY-ADMIN",
+      "nPROD-NCDE-ITBX-WSS-ANY-ADMIN":"PROD-NCDE-ITBX-WSS-ANY-ADMIN",
+      "nPROD-NCDE-GIT-PUP-WSS-ANY-ADMIN":"PROD-NCDE-GIT-PUP-WSS-ANY-ADMIN",
+      "nPROD-NCDE-GIT-SAT-ANY-ADMIN":"PROD-NCDE-GIT-SAT-ANY-ADMIN",
       "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName'))]"
     },
     "resources": [
@@ -868,20 +744,74 @@
       },
       {
         "apiVersion": "2017-05-10",
-        "name" : "QATemplate",
+        "name" : "NSGTemplate",
         "type": "Microsoft.Resources/deployments",
         "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeployqa.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeploynsgs.json')]"
+          },
+          "parameters" : {
+            "nCERT-CDE-LJUMP-ANY-ADMIN": {"value" : "[variables('nCERT-CDE-LJUMP-ANY-ADMIN')]"},
+            "nCERT-CDE-SMTP-ANY-ADMIN": {"value" : "[variables('nCERT-CDE-SMTP-ANY-ADMIN')]"},
+            "nCERT-CDE-WJUMP-ANY-ADMIN": {"value" : "[variables('nCERT-CDE-WJUMP-ANY-ADMIN')]"},
+            "nCERT-NCDE-LJUMP-ANY-ADMIN": {"value" : "[variables('nCERT-NCDE-LJUMP-ANY-ADMIN')]"},
+            "nCERT-NCDE-SMTP-ANY-ADMIN": {"value" : "[variables('nCERT-NCDE-SMTP-ANY-ADMIN')]"},
+            "nCERT-NCDE-WJUMP-ANY-ADMIN": {"value" : "[variables('nCERT-NCDE-WJUMP-ANY-ADMIN')]"},
+            "nPROD-CDE-WSUS-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-WSUS-ANY-ADMIN')]"},
+            "nPROD-CDE-AVM-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-AVM-ANY-ADMIN')]"},
+            "nPROD-CDE-IEM-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-IEM-ANY-ADMIN')]"},
+            "nPROD-CDE-ITBX-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-ITBX-ANY-ADMIN')]"},
+            "nPROD-CDE-LIC-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-LIC-ANY-ADMIN')]"},
+            "nPROD-CDE-AD-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-AD-ANY-ADMIN')]"},
+            "nPROD-CDE-LJUMP-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-LJUMP-ANY-ADMIN')]"},
+            "nPROD-CDE-SMTP-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-SMTP-ANY-ADMIN')]"},
+            "nPROD-CDE-WJUMP-ANY-ADMIN": {"value" : "[variables('nPROD-CDE-WJUMP-ANY-ADMIN')]"},
+            "nPROD-NCDE-LJUMP-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-LJUMP-ANY-ADMIN')]"},
+            "nPROD-NCDE-SMTP-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-SMTP-ANY-ADMIN')]"},
+            "nPROD-NCDE-WJUMP-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-WJUMP-ANY-ADMIN')]"},
+            "nPROD-NCDE-SCAN-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-SCAN-ANY-ADMIN')]"},
+            "nPROD-NCDE-DNS-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-DNS-ANY-ADMIN')]"},
+            "nPROD-NCDE-AD-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-AD-ANY-ADMIN')]"},
+            "nPROD-NCDE-WSUS-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-WSUS-ANY-ADMIN')]"},
+            "nPROD-NCDE-REPO-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-REPO-ANY-ADMIN')]"},
+            "nPROD-NCDE-AVM-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-AVM-ANY-ADMIN')]"},
+            "nPROD-NCDE-IEM-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-IEM-ANY-ADMIN')]"},
+            "nPROD-NCDE-LIC-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-LIC-ANY-ADMIN')]"},
+            "nDEV-LJUMP-ANY-ADMIN": {"value" : "[variables('nDEV-LJUMP-ANY-ADMIN')]"},
+            "nDEV-WJUMP-ANY-ADMIN": {"value" : "[variables('nDEV-WJUMP-ANY-ADMIN')]"},
+            "nDEV-SMTP-ANY-ADMIN": {"value" :  "[variables('nDEV-SMTP-ANY-ADMIN')]"},
+            "nQA-LJUMP-ANY-ADMIN": {"value" : "[variables('nQA-LJUMP-ANY-ADMIN')]"},
+            "nQA-WJUMP-ANY-ADMIN": {"value" : "[variables('nQA-WJUMP-ANY-ADMIN')]"},
+            "nQA-SMTP-ANY-ADMIN": {"value" : "[variables('nQA-SMTP-ANY-ADMIN')]"},
+            "nPROD-NCDE-ITBX-WSS-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-ITBX-WSS-ANY-ADMIN')]"},
+            "nPROD-NCDE-GIT-PUP-WSS-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-GIT-PUP-WSS-ANY-ADMIN')]"},
+            "nPROD-NCDE-GIT-SAT-ANY-ADMIN": {"value" : "[variables('nPROD-NCDE-GIT-SAT-ANY-ADMIN')]"}
+          }
+        }
+      },
+      {
+        "apiVersion": "2017-05-10",
+        "name" : "QATemplate",
+        "type": "Microsoft.Resources/deployments",
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
+                       "Microsoft.Resource/deployments/NSGTemplate" ],
+        "properties" : {
+          "mode" : "Incremental",
+          "templateLink" : {
+            "contentVersion": "1.0.0.0",
+            "uri": "[concat(variables('templateURL'), 'azuredeployqa.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
             "subnet-name" : {"value" : "[variables('snnQA-Tier2')]"},
             "adminUserName" : {"value" : "[parameters('adminUserName')]"},
-            "adminPassword" : {"value" : "[parameters('adminPassword')]"}
+            "adminPassword" : {"value" : "[parameters('adminPassword')]"},
+            "nsg-stmp-name" : {"value" : "[variables('nQA-SMTP-ANY-ADMIN')]"},
+            "nsg-jump-lx-name" : {"value" : "[variables('nQA-LJUMP-ANY-ADMIN')]"},
+            "nsg-jump-win-name" : {"value" : "[variables('nQA-WJUMP-ANY-ADMIN')]"}
           }
         }
       },
@@ -889,12 +819,13 @@
         "apiVersion": "2017-05-10",
         "name" : "DevTemplate",
         "type": "Microsoft.Resources/deployments",
-        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
+                       "Microsoft.Resource/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploydev.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeploydev.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
@@ -908,12 +839,13 @@
         "apiVersion": "2017-05-10",
         "name" : "CertTemplate",
         "type": "Microsoft.Resources/deployments",
-        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]", 
+                       "Microsoft.Resource/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycert.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeploycert.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
@@ -927,12 +859,13 @@
         "apiVersion": "2017-05-10",
         "name" : "CertNonCDETemplate",
         "type": "Microsoft.Resources/deployments",
-        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
+                       "Microsoft.Resource/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycertnoncde.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeploycertnoncde.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
@@ -946,12 +879,13 @@
         "apiVersion": "2017-05-10",
         "name" : "CoreCDETemplate",
         "type": "Microsoft.Resources/deployments",
-        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
+                       "Microsoft.Resource/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycorecde.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeploycorecde.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
@@ -965,12 +899,13 @@
         "apiVersion": "2017-05-10",
         "name" : "CoreNonCDETemplate",
         "type": "Microsoft.Resources/deployments",
-        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
+                       "Microsoft.Resource/deployments/NSGTemplate" ],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeploycorenoncde.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeploycorenoncde.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
@@ -984,12 +919,13 @@
         "apiVersion": "2017-05-10",
         "name" : "ProdCDETemplate",
         "type": "Microsoft.Resources/deployments",
-        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]" ],
+        "dependsOn": [ "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]", 
+                       "Microsoft.Resource/deployments/NSGTemplate"],
         "properties" : {
           "mode" : "Incremental",
           "templateLink" : {
             "contentVersion": "1.0.0.0",
-            "uri": "https://raw.githubusercontent.com/brharr/global_p/master/core_eng_templates/azuredeployprodcde.json"
+            "uri": "[concat(variables('templateURL'), 'azuredeployprodcde.json')]"
           },
           "parameters" : {
             "vnet-name" : {"value" : "[parameters('virtualNetworkName')]"},
@@ -999,8 +935,5 @@
           }
         }
       }
-    ],
-    "outputs" : {
-
-    }
+    ]
   }
